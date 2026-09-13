@@ -1,0 +1,60 @@
+{
+  "out_hours": 8,
+  "n_train": 12659,
+  "n_val": 1816,
+  "n_test": 1046,
+  "max_gate": 0.6,
+  "architecture": "two-stage",
+  "asymmetric_gate": true,
+  "gate_pos_by_horizon": [
+    0.6,
+    0.6,
+    0.6,
+    0.6,
+    0.6,
+    0.6,
+    0.6,
+    0.6
+  ],
+  "gate_neg_by_horizon": [
+    0.33093926010895236,
+    0.6,
+    0.6,
+    0.6,
+    0.6,
+    0.6,
+    0.6,
+    0.6
+  ],
+  "mean_r2_gain_from_solar_wind": 0.04277382317731873,
+  "mean_r2_solar_wind_isolated": -0.11401773177446012,
+  "mean_delta_corr_combined": 0.5309905025501911,
+  "mean_delta_corr_sw_isolated": 0.3244799444539581,
+  "band_quantiles": [
+    0.1,
+    0.9
+  ],
+  "band_coverage_by_horizon": [
+    0.887189292543021,
+    0.8680688336520076,
+    0.8403441682600382,
+    0.8126195028680688,
+    0.8068833652007649,
+    0.7963671128107075,
+    0.8087954110898662,
+    0.8212237093690249
+  ],
+  "band_coverage_nominal": 0.8,
+  "onset_momentum_threshold": 0.15,
+  "onset_n_test_origins": 730,
+  "onset_skill_vs_stage1_by_horizon": [
+    0.672461361684229,
+    -0.20345774356365087,
+    -0.016195486316994412,
+    1.7257211990513555,
+    1.5906704141448125,
+    2.8863487568847934,
+    3.919455939107741,
+    4.0516246593369605
+  ]
+}
