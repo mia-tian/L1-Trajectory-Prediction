@@ -20,8 +20,6 @@ momentum?
 L1 sits between the Sun and Earth and sees coronal mass ejections, solar
 energetic particles, solar wind, and EUV/FUV/X-ray irradiance before they
 reach Earth's magnetosphere — the lead time this project tries to exploit.
-(`L1.png` is a rendered copy of `L1.pdf`, kept alongside it since GitHub's
-`![]()` markdown can't rasterize a PDF directly.)
 
 The approach:
 1. Build a population-level, recency-weighted proxy for "how fast is LEO
