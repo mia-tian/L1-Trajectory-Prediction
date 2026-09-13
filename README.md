@@ -1,7 +1,7 @@
 # L1 — Solar-Wind-Driven LEO Debris Decay Forecasting
 
 Predicting short-term (1–8+ hour) atmospheric-drag-driven orbital decay of
-LEO debris/rocket-body objects from real-time solar wind measurements taken
+LEO objects from real-time solar wind measurements taken
 at the Sun–Earth L1 Lagrange point (NOAA's DSCOVR spacecraft).
 
 ## Motivation
@@ -9,7 +9,7 @@ at the Sun–Earth L1 Lagrange point (NOAA's DSCOVR spacecraft).
 Geomagnetic storms heat and inflate the upper atmosphere, which increases
 drag on low-Earth-orbit objects and accelerates orbital decay — sometimes
 sharply, over just a few hours. DSCOVR sits ~1.5 million km sunward of Earth
-at L1 and measures the solar wind ~30–60 minutes before it reaches
+at L1 and measures the solar wind ~30–90 minutes before it reaches
 Earth's magnetosphere, giving a short but real lead time. This project asks:
 how much of that near-term decay response can be forecast from DSCOVR's
 solar wind/IMF measurements alone, on top of an object's own recent decay
@@ -91,11 +91,6 @@ z-score prediction error into physical along-track position error
 (`physical_units_comparison.py`), and normal-vs-extreme-event RMSE
 comparisons (`compare_extreme_event_rmse.py`).
 
-> Note: a few `analysis/` scripts import sibling modules (e.g.
-> `traj_predict_tle`, an `individual_decay/` package, or additional
-> `population_proxy` backends such as XGBoost/LSTM/TCN variants) that are
-> not present in this snapshot of the repo — check `__pycache__` directories
-> for evidence of what used to exist if one of these imports fails.
 
 ### `models/`
 Checked-in artifacts from the current trained forecaster
@@ -139,7 +134,5 @@ anything large):
 
 ## Requirements
 
-No pinned environment file is checked in; scripts import `numpy`, `pandas`,
-`matplotlib`, `scipy`, `xarray`, `scikit-learn`, and `lightgbm`. Compiled
-bytecode under `__pycache__/` shows the project has been run under both
-Python 3.9 and 3.10.
+scripts import `numpy`, `pandas`, `matplotlib`, `scipy`, `xarray`, `scikit-learn`, and `lightgbm`.
+the project has been run under both Python 3.9 and 3.10.
