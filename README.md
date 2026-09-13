@@ -15,12 +15,13 @@ how much of that near-term decay response can be forecast from DSCOVR's
 solar wind/IMF measurements alone, on top of an object's own recent decay
 momentum?
 
-See [`L1.pdf`](L1.pdf) for a diagram of the geometry: L1 sits between the
-Sun and Earth and sees coronal mass ejections, solar energetic particles,
-solar wind, and EUV/FUV/X-ray irradiance before they reach Earth's
-magnetosphere — the lead time this project tries to exploit. (Linked
-rather than embedded as `![]()`, since GitHub doesn't rasterize PDFs
-through image embedding.)
+![L1 geometry: the Sun's coronal mass ejections, solar energetic particles, solar wind, and EUV/FUV/X-ray irradiance reach L1 before Earth](L1.png)
+
+L1 sits between the Sun and Earth and sees coronal mass ejections, solar
+energetic particles, solar wind, and EUV/FUV/X-ray irradiance before they
+reach Earth's magnetosphere — the lead time this project tries to exploit.
+(`L1.png` is a rendered copy of `L1.pdf`, kept alongside it since GitHub's
+`![]()` markdown can't rasterize a PDF directly.)
 
 The approach:
 1. Build a population-level, recency-weighted proxy for "how fast is LEO
